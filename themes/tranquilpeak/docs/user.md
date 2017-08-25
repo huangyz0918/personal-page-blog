@@ -2,7 +2,7 @@
 
 A gorgeous responsive theme for Hexo blog framework 
 
-[![Tranquilpeak](http://d1u9biwaxjngwg.cloudfront.net/showcases/showcase-v1.9.jpg)](http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak)
+[![Tranquilpeak](http://d1u9biwaxjngwg.cloudfront.net/showcases/showcase-v1.10.jpg)](http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak)
 
 Tranquilpeak theme is compatible with Hexo v3.0.x. The theme is compatible with higher versions of Hexo but these versions have some bugs with generation of relative urls so I recommend to use Hexo 3.0.x for the moment.
 
@@ -29,6 +29,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
         * [Author](#author)
         * [Customization](#customization)
         * [Integrated services](#integrated-services)
+        * [Sharing options](#sharing-options)
         * [Enable pages](#enable-pages)
 - [Integrated services configuration](#integrated-services-configuration)
     * [Algolia](#algolia)
@@ -38,6 +39,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
     * [Prerequisites](#prerequisites)
     * [Change global style](#change-global-style)
     * [Change code coloration (Highlight.js theme)](#change-code-coloration-highlightjs-theme)
+    * [Customize 404 error page](#customize-404-error-page)
 - [Migrating posts](#migrating-posts)
     * [v1.3.0 or lower to v1.4.0 or higher](#v130-or-lower-to-v140-or-higher)
 - [Writing posts](#writing-posts)
@@ -57,7 +59,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ## General ##
 
 - **Author** : Louis Barranqueiro
-- **Version** : 1.9.1
+- **Version** : 1.10.0
 - **Compatibility** : Node v4 or later, Hexo v3.0.0 or later
 
 ## Features ##
@@ -358,12 +360,49 @@ fb_app_id:
 
 |Variable|Description|
 |---|---|
-|disqus_shortnam|Your Disqus shortname. The theme use its own value for disqus shortname to reduce dependency with Hexo in case of this variable is deleted in a new Hexo version.| 
-|duoshuo_shortnam|Your Duoshuo shortname. You can't use Disqus and Duoshuo together, then fill the right shortname. If both are filled, Disqus will be chosen.|
-|gravatar_emai|Your gravatar email. Overwrite `author.picture` everywhere in the blog|
+|disqus_shortname|Your Disqus shortname. The theme use its own value for disqus shortname to reduce dependency with Hexo in case of this variable is deleted in a new Hexo version.| 
+|duoshuo_shortname|Your Duoshuo shortname. You can't use Disqus and Duoshuo together, then fill the right shortname. If both are filled, Disqus will be chosen.|
+|gravatar_email|Your gravatar email. Overwrite `author.picture` everywhere in the blog|
 |google_analytics_id|Your Google analystics web property ID : UA-XXXXX-X|
 |fb_admin_ids|Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. E.g : `9830047,1003342`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information.|
 |fb_app_id|Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : `9841307`. Visit [Facebook docs](https://developers.facebook.com/docs/platforminsights/domains) for more information.|
+
+#### Sharing options
+
+``` yaml
+# Sharing options
+sharing_options:
+    facebook:
+        icon: "fa-facebook-official"
+        url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
+    twitter:
+        icon: "fa-twitter"
+        url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
+    google_plus:
+        icon: "fa-google-plus"
+        url: "https://plus.google.com/share?url={{post.permalink}}"
+```
+
+You can comment and uncomment to enable or disable sharing options. If your own sharing options, follow these steps. E.g with **foo_bar** social network:
+
+1. Add a new option based on the other.
+``` yaml
+sharing_options:
+    foo_bar:
+        icon: "fa-foo_bar"
+        url: "https://www.foo_bar.com/sharer/sharer.php?u={{post.permalink}}"
+```
+2. Add a line in the language file that you use (location: `themes/tranquilpeak/languages/`)
+``` yaml
+global:
+    share_on_foo_bar: "Share on Foo Bar"
+```
+
+|Variable|Description|
+|---|---|
+|icon|Name of the font awesome icon class without the `fa-` (Go to [font-awesome icons](http://fontawesome.io/icons/) to find class name of icon)|
+|url|URL of the link. use `{{` `}}` to insert post variable. Eg: `{{post.date}}` |
+
 
 ### Enable pages ###
 
@@ -506,6 +545,28 @@ Follow these steps :
 2. Follow guidelines in `source/_css/themes/hljs-custom.scss` file
 3. Build the theme with `npm run prod` or `grunt buildProd`. Learn more about Grunt tasks : [Grunt tasks](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#grunt-tasks)
 
+### Customize 404 error page
+
+When a user requests a page that the server cannot find, a standard *404* error page will be displayed. To create a custom 404 page that fits the theme first create a `404.md` file in your Hexo `source` folder.
+
+Hide post meta, actions and comments using front-matter settings:
+
+``` yaml
+title: Page not found
+meta: false
+actions: false
+comments: false
+```
+
+Now you can customize your 404 error page just like any other blog post.
+Finally, you need to tell your server to use `/404.html` (which Hexo generates out of `404.md`) as your default 404 error page. Here are tutorials for some common web servers/providers:
+
+ - [Apache](https://www.digitalocean.com/community/tutorials/how-to-create-a-custom-404-page-in-apache)
+ - [Nginx](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-to-use-custom-error-pages-on-ubuntu-14-04)
+ - [GitHub Pages](https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/)
+ - [Amazon Cloudfront/S3](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/custom-error-pages.html)
+
+
 ## Migrating posts ##
 
 ### Prerequisites ###
@@ -574,6 +635,8 @@ gallery:
     - http://i.imgur.com/o9r19kD.jpg "Dubai"
     - https://example.com/orignal.jpg https://example.com/thumbnail.jpg "Sidney"
 comments: false
+meta: false
+actions: false
 ```
 
 |Variable|Description|
@@ -590,7 +653,9 @@ comments: false
 |coverCaption|Add a caption under the cover image : [Cover caption demo](http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/2015/05/13/Cover-image-showcase/)|
 |coverMeta|`in`: display post meta (title, date and categories) on cover image, `out`: display meta (title, date and categories) under cover image as usual. Default behavior : `in`|
 |gallery|Formerly **photos**. Images displayed in an image gallery (with fancybox) at the end of the post. If thumbnail image is not configured and cover image too, the first photo is used as thumbnail image. format: `original url [thumbnail url] [caption]`, E.g : `https://example.com/original.jpg https://example.com/thumbnail.jpg "New York"`|
-|comments|Disable the comment of the post.
+|comments|Disable the comment of the post.|
+|meta|Disable post meta (date, categories).|
+|actions|Disable post actions (navigation, share links).|
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
@@ -760,7 +825,7 @@ E.g : `{% wide_image http://google.fr/images/image125.png "A beautiful sunrise" 
 #### Fancybox
 
 `fancybox` tag is deprecated since Tranquilpeak 1.3. Please use `image` tag with `fancybox` class to generate them. More information here : [Image tag](#image) 
-  
+
 ## Running ##
 
 Run `hexo server` and start writing! :)

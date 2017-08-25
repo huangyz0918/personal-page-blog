@@ -33,8 +33,9 @@
       // open modal when `s` button is pressed
       $(document).keyup(function(event) {
         var target = event.target || event.srcElement;
-        // exit if user is focusing an input
-        if (target.tagName.toUpperCase() === 'INPUT') {
+        // exit if user is focusing an input or textarea
+        var tagName = target.tagName.toUpperCase();
+        if (tagName === 'INPUT' || tagName === 'TEXTAREA') {
           return;
         }
 
@@ -117,7 +118,7 @@
         html += '<div class="media">';
         if (post.thumbnailImageUrl) {
           html += '<div class="media-left">';
-          html += '<a class="link-unstyled" href="' + (post.link || post.permalink) +'">';
+          html += '<a class="link-unstyled" href="' + (post.link || post.permalink) + '">';
           html += '<img class="media-image" ' +
             'src="' + post.thumbnailImageUrl + '" ' +
             'width="90" height="90"/>';
@@ -126,7 +127,7 @@
         }
 
         html += '<div class="media-body">';
-        html += '<a class="link-unstyled" href="' + (post.link || post.permalink) +'">';
+        html += '<a class="link-unstyled" href="' + (post.link || post.permalink) + '">';
         html += '<h3 class="media-heading">' + post.title + '</h3>';
         html += '</a>';
         html += '<span class="media-meta">';

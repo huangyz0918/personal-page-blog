@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 1.9.1
+# Version : 1.10.0
 # Author : Louis Barranqueiro
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -84,14 +84,14 @@ sidebar:
         #     icon: linkedin
 #         mail:
              # title: global.mail
-             # url: huanyz0918@gmail.com 
+             # url: huangyz0918@gmail.com 
              # icon: envelope-o
 #    rss:
  #       rss:
   #          title: global.rss
    #         url: /atom.xml
     #        icon: rss
-   
+
 
 # Header configuration
 # The link at the right of the header is customizable
@@ -105,22 +105,22 @@ sidebar:
 header:
     right_link:
         url: /#about
-        icon: question 
+        icon: question  
         class:
 
 
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
-author:  
-    email: huangyz0918@gmail.com 
-    location: China  
+author:
+    email: huangyz0918@gmail.com  
+    location: 青岛 中国山东   
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture: https://huangyz0918.github.io/assets/images/avatar.jpg  
+    picture: https://ooo.0o0.ooo/2017/08/25/599f7e004aaad.jpg      
     # Your Twitter username without the @. E.g : `tranquilpeak`
-    twitter:
+    twitter: https://twitter.com/hyz0918  
     # Your personal google plus profile id, not your blog or business page id.
     # E.g : `+JohnDoe` or `123812884128439`
     google_plus:
@@ -142,10 +142,10 @@ author:
 # large sidebar is swiped on all lower screens
 # 5: Display header bar on all screens and large sidebar is swiped on large screen
 # 6: Display header bar on all screens and medium sidebar is swiped
-sidebar_behavior: 1  
+sidebar_behavior: 1
 # Hide sidebar on all article page to let article take full width to improve reading, and
 # enjoy wide images and cover images. (true: enable, false: disable)
-clear_reading: true  
+clear_reading: true
 # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
 thumbnail_image: true
 # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
@@ -166,7 +166,7 @@ auto_thumbnail_image: true
 # and use relative url : `your-image.png`
 cover_image: cover.jpg
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-favicon: https://huangyz0918.github.io/assets/images/cat.png    
+favicon: https://huangyz0918.github.io/assets/images/cat.png  
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
@@ -192,3 +192,45 @@ gravatar_email:
 fb_admin_ids:
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
 fb_app_id:
+
+
+# Sharing options
+# Comment and uncomment to enable or disable sharing options
+# If you wanna add a sharing option, read user documentation :
+# Tranquilpeak configuration > Theme configuration > sharing-options
+sharing_options:
+    facebook:
+        icon: "fa-facebook-official"
+        url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
+    twitter:
+        icon: "fa-twitter"
+        url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
+    google_plus:
+        icon: "fa-google-plus"
+        url: "https://plus.google.com/share?url={{post.permalink}}"
+    # Asian social networks
+    # weibo:
+    #     title: "Weibo"
+    #     icon: "fa-weibo"
+    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    # qq:
+    #     title: "QQ"
+    #     icon: "fa-qq"
+    #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
+    # qzone:
+    #     title: "Qzone"
+    #     icon: "fa-star"
+    #     url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
+    # renren:
+    #     title: "Renren"
+    #     icon: "fa-renren"
+    #     url: "http://widget.renren.com/dialog/share?resourceUrl={{post.permalink}}"
+    # Russian social networks
+    # vk:
+    #     title: "VK"
+    #     icon: "fa-vk"
+    #     url: "https://vk.com/share.php?url={{post.permalink}}"
+    # odnoklassniki:
+    #     title: "Odnoklassniki"
+    #     icon: "fa-odnoklassniki"
+    #     url: "https://connect.ok.ru/offer?url={{post.permalink}}"

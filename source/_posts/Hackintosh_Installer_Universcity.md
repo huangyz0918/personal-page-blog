@@ -7,7 +7,7 @@ tag:
 categories: Technology  
 clearReading: true
 favicon: huangyz0918.github.io/assets/images/cat.png 
-thumbnailImage: https://huangyz0918.github.io/assets/images/apple.png
+thumbnailImage: https://ooo.0o0.ooo/2017/08/25/599f81164740a.jpeg 
 thumbnailImagePosition: right 
 autoThumbnailImage: yes
 metaAlignment: center
