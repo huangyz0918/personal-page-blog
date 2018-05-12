@@ -62,30 +62,30 @@ sidebar:
              title: global.github
              url: https://github.com/huangyz0918 
              icon: github 
-         stack_overflow:
-             title: global.stack_overflow
-             url: http://stackoverflow.com/users/7219156/%E9%BB%84%E4%BB%A5%E6%AD%A3 
-             icon: stack-overflow
+       #  stack_overflow:
+       #      title: global.stack_overflow
+       #      url: http://stackoverflow.com/users/7219156/%E9%BB%84%E4%BB%A5%E6%AD%A3 
+       #      icon: stack-overflow
          twitter:
              title: global.twitter
              url: https://twitter.com/hyz0918 
              icon: twitter
-         facebook:
-             title: global.facebook
-             url: https://www.facebook.com/profile.php?id=100010626099528 
-             icon: facebook
-         google_plus:
-             title: global.google_plus
-             url: https://plus.google.com/104616011216428766493 
-             icon: google-plus
+      #   facebook:
+      #       title: global.facebook
+      #       url: https://www.facebook.com/profile.php?id=100010626099528 
+      #       icon: facebook
+      #   google_plus:
+      #       title: global.google_plus
+      #       url: https://plus.google.com/104616011216428766493 
+      #       icon: google-plus
         # linked_in:
         #     title: global.linkedin
         #     url: https://www.linkedin.com/profile/
         #     icon: linkedin
-#         mail:
-             # title: global.mail
-             # url: huangyz0918@gmail.com 
-             # icon: envelope-o
+        # mail:
+        #      title: global.mail
+        #      url: huangyz0918@gmail.com 
+        #      icon: envelope-o
 #    rss:
  #       rss:
   #          title: global.rss
@@ -209,14 +209,14 @@ sharing_options:
         icon: "fa-google-plus"
         url: "https://plus.google.com/share?url={{post.permalink}}"
     # Asian social networks
-    # weibo:
-    #     title: "Weibo"
-    #     icon: "fa-weibo"
-    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
-    # qq:
-    #     title: "QQ"
-    #     icon: "fa-qq"
-    #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
+    weibo:
+        title: "Weibo"
+        icon: "fa-weibo"
+        url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    qq:
+        title: "QQ"
+        icon: "fa-qq"
+        url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
     # qzone:
     #     title: "Qzone"
     #     icon: "fa-star"
