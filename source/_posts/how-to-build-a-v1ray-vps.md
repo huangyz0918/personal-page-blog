@@ -1,5 +1,5 @@
 ---
-title: 如何在DigitalOcean上搭建一个V2Ray server
+title: 如何在 DigitalOcean 上搭建一个 V2Ray server
 date: 2017-10-17 13:02:37
 tags: V2Ray
 categories: Technology  

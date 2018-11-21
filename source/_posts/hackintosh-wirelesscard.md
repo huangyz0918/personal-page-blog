@@ -1,5 +1,5 @@
 ---
-title: 重刷BIOS破解无线网卡白名单
+title: 重刷 BIOS 破解无线网卡白名单
 date: 2017-03-08 22:09:59
 tag: 
   - Hackintosh 

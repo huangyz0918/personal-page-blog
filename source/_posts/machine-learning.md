@@ -1,6 +1,6 @@
 ---
 
-title: 一场GD和SGD的实验与较量
+title: 一场 GD 和 SGD 的实验与较量
 date: 2016-12-27 21:13:44
 tag: 
   - Machine Learning  
