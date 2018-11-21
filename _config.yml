@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Mickys  
+title: Yizheng H  
 subtitle: 最爱创意完美 
 description:
 author: huangyz0918  
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://mickys.me  
+url: http://blog.huangyz.name
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
