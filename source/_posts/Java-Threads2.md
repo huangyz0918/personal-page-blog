@@ -8,9 +8,10 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
+summary: Java 高并发学习手记，内存模型与可见性。
+
 ---
 
-Java 高并发学习手记，内存模型与可见性。
 
 <!-- more -->
 

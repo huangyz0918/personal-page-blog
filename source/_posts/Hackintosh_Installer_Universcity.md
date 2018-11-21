@@ -12,11 +12,9 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
+summary: 给强势安利了苹果系统又没钱买苹果电脑之后...
 
 ---
-
-给强势安利了苹果系统又没钱买苹果电脑之后...
-你懂的
 
 
 <!-- more -->

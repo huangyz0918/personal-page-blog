@@ -11,6 +11,7 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
+summary: 来自创业伙伴的呼喊，对的人总会聚在一起的
 ---
 
 来自创业伙伴的呼喊，对的人总会聚在一起的

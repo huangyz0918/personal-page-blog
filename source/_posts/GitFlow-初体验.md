@@ -10,10 +10,10 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
+summary: 论一粒种子是如何成长为参天大树的
 
 ---
 
-论一粒种子是如何成长为参天大树的
 
 <!-- more -->
 

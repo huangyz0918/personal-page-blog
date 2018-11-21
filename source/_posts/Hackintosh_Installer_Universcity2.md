@@ -12,10 +12,9 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
+summary: 处女座晚期患者追求完美的自虐旅程
 
 ---
-
-处女座晚期患者追求完美的自虐旅程
 
 
 <!-- more -->

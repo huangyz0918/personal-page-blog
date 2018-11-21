@@ -11,10 +11,10 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
+summary: 当完美主义者遇到玄学……
 
 ---
 
-当完美主义者遇到玄学……
 
 
 <!-- more -->

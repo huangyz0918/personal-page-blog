@@ -8,9 +8,9 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
----
+summary: Java 高并发学习手记，synchronized 理解与优化。
 
-Java 高并发学习手记，synchronized 理解与优化。
+---
 
 <!-- more -->
 

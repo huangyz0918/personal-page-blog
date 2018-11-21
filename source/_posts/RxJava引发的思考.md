@@ -10,10 +10,8 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true
-
+summary: RxJava 哲学与简洁之美
 ---
-
-RxJava 哲学与简洁之美
 
 <!-- more -->
 

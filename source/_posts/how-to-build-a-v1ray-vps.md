@@ -10,10 +10,10 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
+summary: 感谢十九大给了我这次学习服务器的机会，特别的爱给特别的你
+
 ---
 
-感谢十九大给了我这次学习服务器的机会
-特别的爱给特别的你
 <!-- more -->
 
 打开v2ray-core Github的release界面，会看到开发者的一句话：“特别的爱给特别的你”，所以我沿用了这句话作为这篇服务器搭建教程的前言，也算是对开发者的致敬吧。

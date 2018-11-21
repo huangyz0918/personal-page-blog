@@ -11,10 +11,10 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true
+summary: 前一阵在Google+ 的谷歌开发者社区收到了GDG Devfest 的报名邀请，觉得也是时候跑出去见见世面了，于是就欣然报了一个名。然后带着设计师老喵就开始了一场说走就走的旅行...
  
 ---
 
-前一阵在Google+ 的谷歌开发者社区收到了GDG Devfest 的报名邀请，觉得也是时候跑出去见见世面了，于是就欣然报了一个名。然后带着设计师老喵就开始了一场说走就走的旅行...
 <!-- more -->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GDG Devfest是谷歌开发者社区节的简称，每年都会有一系列Google赞助的活动，其中有开发者交流、CodeSpeech、CodeLab、抽奖、茶歇合影等活动。GDG 在全国各大城市都有，但是遗憾的是我所在的济南没有:( ，所以我和老喵这样的谷歌死忠粉只好挑一个最近的城市去了，但是考虑到时间的原因，我们没有去北京，而选择了上海。
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;讲道理，上海这个城市还是蛮好的，无论是繁华的广场还是安静的街道，都有一种很小众的美(也许这个就是所谓的“资产阶级”)。和老喵到上海的第一天，天气简直糟透了，倾盆大雨将第一日的心情洗刷得干干净净。没办法，为了信仰，千里迢迢还是得来蹭一蹭Google的气息嘛
