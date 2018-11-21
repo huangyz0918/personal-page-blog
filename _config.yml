@@ -69,5 +69,5 @@ theme: tranquilpeak
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git 
-  repo: https://github.com/huangyz0918/huangyz0918.github.io.git   
+  repo: https://github.com/huangyz0918/personal-page-blog.git    
   branch: master 
