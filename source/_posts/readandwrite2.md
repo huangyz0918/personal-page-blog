@@ -11,7 +11,7 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
-summary: 有情才有剑 ————八月书评《多情剑客无情剑》
+summary: 有情才有剑……
 ---
 
 

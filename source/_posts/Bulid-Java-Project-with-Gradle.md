@@ -11,7 +11,7 @@ thumbnailImagePosition: right
 autoThumbnailImage: yes
 metaAlignment: center
 comments: true 
-summary: 这篇文章参照[Excited!](https://zhaojinxiang.github.io/)完成，关于使用Gradle 构建java项目
+summary: 关于使用 Gradle 构建 Java 项目
 
 ---
 
