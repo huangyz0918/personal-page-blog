@@ -6,6 +6,7 @@ tag:
   - Hackintosh 
 categories: Technology  
 clearReading: true
+date: 2017-03-30 20:10:31
 favicon: huangyz0918.github.io/assets/images/cat.png 
 thumbnailImage: https://i.loli.net/2017/10/10/59dce63bdaff6.png 
 thumbnailImagePosition: right 
