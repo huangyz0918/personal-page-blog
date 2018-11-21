@@ -26,4 +26,4 @@ install:
        - blog-source
    env:
     global:
-      - GH_REF: https://github.com/huangyz0918/huangyz0918.github.io.git
+      - GH_REF: https://github.com/huangyz0918/personal-page-blog.git
