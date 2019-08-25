@@ -5,10 +5,9 @@ description: Hard work always pays off.
 url: "http://blog.huangyz.name/" 
 
 # Build settings
-theme: moving
+remote_theme: huangyz0918/moving
 plugins:
   - jekyll-feed
 
 moving:
-  date_format: "%b %d"
   back_to: "Index"
