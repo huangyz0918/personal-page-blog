@@ -50,6 +50,10 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
+    moving (0.1.0)
+      jekyll (~> 4.0)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (3.1.1)
@@ -78,6 +82,7 @@ DEPENDENCIES
   jekyll (~> 4.0.0)
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
+  moving
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
