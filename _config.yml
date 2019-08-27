@@ -10,4 +10,5 @@ plugins:
   - jekyll-feed
 
 moving:
+  date_format: "%b %d"
   back_to: "Index"
