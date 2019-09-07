@@ -6,8 +6,6 @@ author: "Yizheng Huang"
 meta: "Springfield"
 ---
 
-> 此文章首发于 [简书](https://www.jianshu.com/p/e67f0917e7dc)
-
 ## 本文目录
 - Java 内存模型与可见性
 - 指令重排序

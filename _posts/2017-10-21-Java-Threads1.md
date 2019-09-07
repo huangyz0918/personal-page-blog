@@ -6,8 +6,6 @@ author: "Yizheng Huang"
 meta: "Springfield"
 ---
 
-> 此文章首发于 [简书](https://www.jianshu.com/p/6dc9c227717e)
-
 ## 本文目录
 - 故事缘由
 - synchronized 关键字学习
