@@ -187,7 +187,7 @@ public class SynchronizedUse05 implements Runnable {
 ```
 
 我们在这个例子里面启动了8个不同的线程，每个线程都会调用`t`里面的`run()`方法，而每个线程都对变量`count`进行了自减操作。源代码为这个类的`run()`方法加了同步锁，如果把锁去掉，我们就很容易在每次之中得到不同的运行结果，或者说出现重复的数字，且每次运行得不到顺序打印的数字，如下图所示，我们可以这样理解：
-![不加同步锁的后果](https://upload-images.jianshu.io/upload_images/2779067-e651c63201c9c79c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![不加同步锁的后果](https://i.loli.net/2019/09/07/zaM5e3AoYwZWHmU.png)
 
 `Thread 1` 和 `Thread 2` 几乎同时执行代码，它们都拿到了值为10的`count`并对其进行了修改，所以这两个线程就会输出一样的`count`，之后由于线程对于资源的抢占式得到，所以陆陆续续输出结果的线程也不会是按照顺序的，这也是为什么`Thread 1`执行完毕以后`Thread 4`接下去执行的原因了，而加了锁之后可以消除这样的问题。
 

@@ -31,7 +31,7 @@ meta: "Springfield"
 
 言归正传，我们可以用一个简单的抽象示意图来理解 Java 内存模型:
 
-![Java 内存模型抽象示意图](https://upload-images.jianshu.io/upload_images/2779067-1c3230fe514b56ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Java 内存模型抽象示意图](https://i.loli.net/2019/09/07/Zac3zRHBtiW7V9X.png)
 
 从上面的图可以看到，假设有三个线程`Thread1`、`Thread2` 和 `Thread3`，它们在运行的过程中都会对变量 `a` 进行一定程度的操作，这些操作都是基于 JMM 给出的规定:
 
@@ -44,7 +44,7 @@ meta: "Springfield"
 
 说了这么多，这些东西和可见性有什么关系呢？我们先看下面的图：
 
-![线程之间通信](https://upload-images.jianshu.io/upload_images/2779067-d7ab3d0d58923d85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![线程之间通信](https://i.loli.net/2019/09/07/rwiRIzky2l7WMPj.png)
 
 在图中，一开始`Thread1`和`Thread2`都从主内存中获取了共享变量`a`的一个副本：`a1`和`a2`，它们的初始值满足：`a1 = a2 = a = 0`，但是随着线程操作的进行，`Thread2`把`a2`的值改为了1，由于线程1和线程2之间的不可见性，所以造成了`a1`和`a2`值不一致，为了解决这个问题，线程2需要把自己修改过的`a2`先同步到主内存中（如图中红色箭头所示），然后再经由主内存刷新到`Thread1`中，这就是 Java 内存模型中线程同步变量的方法。
 
@@ -59,7 +59,7 @@ meta: "Springfield"
 
 以前有一句古话 “所见即所得” ，但是在计算机程序执行的时候却不是这个样子的，__为了提高程序的性能，编译器或处理器会对程序执行的顺序进行优化，使得代码书写的顺序与实际执行的顺序未必相同__。
 
-![指令重排序](https://upload-images.jianshu.io/upload_images/2779067-2bbca2a66a0e49e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![指令重排序](https://i.loli.net/2019/09/07/jkEhnV9zsK73Lqe.png)
 
 
 而计算机程序重排序主要又可以分为以下几类：
@@ -80,7 +80,7 @@ int C = A + B; // 3
 ```
 其中第一行和第二行执行的结果之间不存在数据的依赖性，因为第一行第二行的成功运行不需要对方的计算结果，但是第三行`C`的计算结果却是依赖于`A`和`B`的。这个依赖关系可以用下面的示意图表示：
 
-![依赖关系](https://upload-images.jianshu.io/upload_images/2779067-28975e2db8eb1778.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![依赖关系](https://i.loli.net/2019/09/07/oT6ysEVK8MzPa1n.png)
 
 所以根据依赖关系，as-if-serial语义将会允许上述程序的第一行和第二行进行重排序，而第三行的执行一定会放在前两行程序之后。as-if-serial 语义把单线程程序保护了起来，遵守as-if-serial语义的编译器、运行时环境和处理器共同为编写单线程程序的程序员们创建了一个幻觉：单线程程序是按程序的顺序来执行的。as-if-serial 语义使单线程程序员无需担心重排序会干扰他们，也无需担心内存可见性问题。
 
@@ -109,7 +109,7 @@ public class Test {
 
 我们对`write()`来分析，`语句1`和`语句2`实际上并没有数据依赖关系，根据as-if-serial 语义，这两行代码在实际运行的时候很可能会被重排序过。同样的，对`read()`方法来说，`if(runnig)`和`int result = count++;` 这两个语句也没有数据依赖关系，也会被重排序。那么对于线程`Thread1`和`Thread2`来说，`语句1`和`语句2`被重排序的时候，程序执行会出现如下的效果：
 
- ![可能出现的一种执行顺序](https://upload-images.jianshu.io/upload_images/2779067-0f9914be8219c5c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+ ![可能出现的一种执行顺序](https://i.loli.net/2019/09/07/wS3NWBxsCe82r5n.png)
 
 在这种情况下，`count++` 这句话在 `Thread2` 里面比在 `Thread1`中 `count = 1` 更早得到了执行，相比于重排序之前，这样得到的 `count` 最终的值为1，而不进行重排序的话结果是2，如此一来，重排序在多线程环境中破坏了原有的语意。同样，对于`语句3`和`语句4`，大家也可以对重排序是否会导致线程不安全做出类似的分析（先考虑数据依赖关系和控制流程依赖关系）。
 
