@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "近日随笔 (1)"
+title: "八月随笔"
 categories: life
 author: "Yizheng Huang"
 meta: "Springfield"
