@@ -12,3 +12,10 @@ plugins:
 moving:
   date_format: "%b %d"
   back_to: "Index"
+  
+  social_links:
+    rss: RSS
+    github:  huangyz0918
+    facebook: huangyz0918
+    linkedin: yizheng-huang
+
