@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "重刷联想电脑 BIOS 破解无线网卡白名单"
+title: "重刷 Lenovo BIOS 破解无线网卡白名单"
 categories: tech
 author: "Yizheng Huang"
 meta: "Springfield"

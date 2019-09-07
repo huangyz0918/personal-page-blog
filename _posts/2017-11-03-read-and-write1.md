@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "书评《岛上书店》"
+title: "十一月书评:《岛上书店》"
 categories: read
 author: "Yizheng Huang"
 meta: "Springfield"

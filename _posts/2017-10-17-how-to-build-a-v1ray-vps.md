@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "如何在 DigitalOcean 上搭建一个 V2Ray server"
+title: "如何在 DigitalOcean 上搭建一个 V2Ray Server"
 categories: tech
 author: "Yizheng Huang"
 meta: "Springfield"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "书评《多情剑客无情剑》"
+title: "九月书评:《多情剑客无情剑》"
 categories: read
 author: "Yizheng Huang"
 meta: "Springfield"
