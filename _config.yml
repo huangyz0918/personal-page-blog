@@ -10,9 +10,10 @@ plugins:
   - jekyll-feed
 
 moving:
+  about_you: Hard work always pays off
+  avatar_url: https://i.loli.net/2019/09/07/Nv6T3a47q25MOmi.png 
   date_format: "%b %d"
   back_to: "Index"
-  
   social_links:
     rss: RSS
     github:  huangyz0918
