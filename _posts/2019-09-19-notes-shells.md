@@ -111,11 +111,9 @@ $ echo ${SOMEVAR:?}
 -sh: SOMEVAR: parameter null or not set
 ```
 
-### Control flow
+### Control Flow
 
 There are some condition expressions, such as file conditions, string conditions and integer conditions.
-
-Here I present some of them.
 
 Integer Conditions
 ```
@@ -206,4 +204,57 @@ Output:
 ```bash
 Mad Murdock
 ```
+
+### Loops
+
+__While loop__
+
+The while -statement is the simplest and most straightforward form of repetition statement in Bourne shell. It is also the most general. Its general form is this:
+
+```bash
+while command-list1 
+  do command-list2 
+done
+```
+
+An example is,
+
+```bash
+while [ $counter -lt 10 ] 
+do
+  echo $counter
+  counter=`expr $counter + 1` 
+done
+```
+
+__Until loop__
+
+The until -statement is also a repetition statement, but it is sort of the semantic opposite of the while -statement. The general form of the until -statement is,
+
+```bash
+until command-list1 
+do command-list2 
+done
+```
+
+__For Loop__
+
+```bash
+for name in w1 w2 ... 
+do command-list
+done
+```
+
+Example,
+
+```bash
+for myval in Abel Bertha Charlie Delta Easy Fox Gumbo Henry India 
+do
+  echo $myval Company 
+done
+```
+
+### File and Streams 
+
+In the Unix based operation system, everything in the whole (Unix) universe is a file.
 
