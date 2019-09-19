@@ -258,3 +258,23 @@ done
 
 In the Unix based operation system, everything in the whole (Unix) universe is a file.
 
+There are several operators built in to the Bourne Shell that relate to redirecting. The most basic and general one is the pipe operator, which we will examine in some detail further on. The others are related to redirecting to file.
+
+Redirecting to file is built straight into the Bourne Shell, through the following operators:
+
+```bash
+process > data file
+```
+- redirect the output of process to the data file; create the file if necessary, overwrite its
+existing contents otherwise.
+
+```bash
+process >> data file
+```
+- redirect the output of process to the data file; create the file if necessary, append to its existing contents otherwise.
+
+```bash
+process < data file
+```
+- read the contents of the data file and redirect that contents to process as input.
+
