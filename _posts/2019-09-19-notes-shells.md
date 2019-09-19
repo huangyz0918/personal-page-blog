@@ -24,10 +24,39 @@ Today, we can find __bash__ in many Unix systems, it is a heavily extended form 
 
 ### Multiprocessing
 
-This book, _Bourne Shell Scripting_ also has a little part about the Unix and multiprocessing. Since the tutorial bases in the Unix, and, Unix Operating System is and always has been a multt-user, multi-processing operating system (this in contrast with other operating systems like macOS and Microsoft’s DOS/Windows operating systems). 
+This book, _Bourne Shell Scripting_ also has a little part about the Unix and multiprocessing. Because the tutorial bases in the Unix, and, Unix Operating System is and always has been a multt-user, multi-processing operating system (this in contrast with other operating systems like macOS and Microsoft’s DOS/Windows operating systems), the book puts this part before telling some real commands. 
 
 The multiple tasks feature means two things,
 
 - A child process can _never_ make changes to the operating environment of its parent—it only has access to a copy of that environment;
 - If you actually do _want_ to make changes in the environment of your shell (or specifically want to avoid it), you have to know when a command runs as a child process and when it runs within your current shell; you might otherwise pick a variant that has the opposite effect of that which you want.
 
+### Variable Expansion
+
+The reason that using a variable is called substitution is that the shell literally replaces each reference to any variable with its value. The simplest way of using a variable is the way we’ve already seen, prepending the variable name with a `$`. So for instance:
+
+```bash
+$ USER=JoeSixpack 
+$ echo $USER
+```
+
+So, how to use variables? To using variables, we have multiple ways, let's see a simple example. 
+
+Input:
+
+```bash
+$ ANIMAL=duck
+$ echo One $ANIMAL, two $ANIMALs
+```
+
+Output:
+```bash
+duck, two
+```
+
+So what went wrong here? Well, obviously the shell substituted nothing for the `ANIMAL` variable, but why? Because with the extra `s` the shell thought we were asking for the non-existent `ANIMALs` variable. But what gives there? We’ve used variables in the middle of strings before (as in `/home/ANIMAL/logs`). But an `s` is not a `/`: an `s` can be a valid part of a variable name, so the shell cannot tell the difference. In cases where you explicitly have to separate the variable from other text, you can use braces:
+
+```bash
+$ ANIMAL=duck
+$ echo One $ANIMAL, two ${ANIMAL}s
+```
