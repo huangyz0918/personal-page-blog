@@ -2,6 +2,7 @@
 layout: post
 title: "Notes of Bourne Shell Scripting"
 categories: study
+author: "Yizheng Huang"
 ---
 
 This is a brief reading note about the _Bourne Shell Scripting_ from [Wikibooks.org](https://en.wikibooks.org).
@@ -17,10 +18,16 @@ Stephen’s shell was slim, fast, and though a bit unwieldy at times, its power 
 
 Indeed, requirements of user are growing fast while the original Bourne Shell cannot meet the them anymore. 
 
+So developers built a lot of shells that can run in sh-like mode, to more closely emulate that very first sh, though most people tend just to run their shells in the default mode, which provides more power than the minimum sh.
 
+Today, we can find __bash__ in many Unix systems, it is a heavily extended form of the Bourne Shell produced by the Free Software Foundation.
 
+### Multiprocessing
 
+This book, _Bourne Shell Scripting_ also has a little part about the Unix and multiprocessing. Since the tutorial bases in the Unix, and, Unix Operating System is and always has been a multt-user, multi-processing operating system (this in contrast with other operating systems like macOS and Microsoft’s DOS/Windows operating systems). 
 
+The multiple tasks feature means two things,
 
-
+- A child process can _never_ make changes to the operating environment of its parent—it only has access to a copy of that environment;
+- If you actually do _want_ to make changes in the environment of your shell (or specifically want to avoid it), you have to know when a command runs as a child process and when it runs within your current shell; you might otherwise pick a variant that has the opposite effect of that which you want.
 
