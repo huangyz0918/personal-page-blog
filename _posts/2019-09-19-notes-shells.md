@@ -16,7 +16,7 @@ Stephen’s shell was slim, fast, and though a bit unwieldy at times, its power 
 
 ### Improvements in SH
 
-Indeed, requirements of user are growing fast while the original Bourne Shell cannot meet the them anymore. 
+Indeed, requirements of user are growing fast while the original Bourne Shell cannot meet them anymore. 
 
 So developers built a lot of shells that can run in sh-like mode, to more closely emulate that very first sh, though most people tend just to run their shells in the default mode, which provides more power than the minimum sh.
 
@@ -60,3 +60,55 @@ So what went wrong here? Well, obviously the shell substituted nothing for the `
 $ ANIMAL=duck
 $ echo One $ANIMAL, two ${ANIMAL}s
 ```
+
+And we can use default values while using variables, something like this:
+
+```bash
+${ <nowiki/>varname [:]-default <nowiki/> }
+```
+
+An example is,
+
+Input:
+```bash
+$ THIS_ONE_SET=Hello
+$ echo $THIS_ONE_SET ${THIS_ONE_NOT:-World}
+```
+
+Output:
+```bash
+Hello World
+```
+
+But is you want to do the default assignment while doing the substitution, you can use a more convenient way,
+
+```bash
+${ <nowiki/>varname [:]=default <nowiki/>}
+```
+
+Here is an example,
+
+Input:
+```bash
+$ echo ${NEWVAR:=newval}
+newval
+$ echo $NEWVAR
+newval
+```
+
+If you want to substitute with value check, you can use,
+
+```bash
+${ <nowiki/>varname [:]?message <nowiki/>}
+```
+
+Here is an example,
+
+```bash
+$ echo ${SOMEVAR:?has not been set} 
+-sh: SOMEVAR: has not been set
+$ echo ${SOMEVAR:?}
+-sh: SOMEVAR: parameter null or not set
+```
+
+
