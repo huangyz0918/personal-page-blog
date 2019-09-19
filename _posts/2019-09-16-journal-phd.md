@@ -15,17 +15,24 @@ In its prologue, Guo described why he chose to pursue a Ph.D., the biggest reaso
 
 Guo has his perspective in those contradistinctions, and he is fortunately have such a clear view before pursuing the degree. I believe that most students in China don't know why they need the Ph.D. before starting the real study.
 
-So, this content reminded me why I need a Ph.D.. I was born in a teachers' family, but my parents are both work in middle school, not an university. I don't think a professor, a teacher are dream jobs for me, because my parents just give me a feeling that teachers are really boring. So, I'm mot sure the family background will be the motivation for me to pursure a Ph.D degree.
+So, this content reminded me why I need a Ph.D.. I was born in a teachers' family, but my parents are both work in middle school, not a university. I don't think a professor, a teacher are dream jobs for me, because my parents just give me a feeling that teachers are really boring. So, I'm mot sure the family background will be the motivation for me to pursure a Ph.D degree.
 
 So, at least I know I'm not interested in the university life and a life-time research work. But apart from this, why I still want to pursue a Ph.D. degree?
 
 I think that comes from two people I known. 
 
-The first one is Prof. Wei-Ping, the chairman of Hisense, chief dean in Shandong Univ and a professor in University of Waterloo, Canada. After receiving his Ph.D. in MIT, 1985, He became a professor in Canada, but he did not spend the rest of his life working in the campus, finally became a successful entrepreneur. I dreamed to be a personal like him, but I'm not so confident about spending the whole life doing research... I like talking to others, doing presentation and working in a team that can turn some exciting ideas into reality. I want to know more about the Ph.D. program is because I'm getting tired of building engineering projects with so much repetitive work, that makes me boring, and many developers just died in such mediocrity. I think pursuing a Ph.D. is a progress that you can keep learning, trying to solve some new problems that nobody knows their answer, and this is a kind of life I want, full of challenges.
+The first one is Prof. Wei-Ping, the chairman of Hisense, chief dean in Shandong Univ and a professor in University of Waterloo, Canada. After receiving his Ph.D. in MIT, 1985, He became a professor in Canada, but he did not spend the rest of his life working in the campus, finally became a successful entrepreneur. I dreamed to be a personal like him, but I'm not so confident about spending the whole life doing research... I like talking to others, doing presentation and working in a team that can turn some exciting ideas into reality. I want to know more about the Ph.D. program is because I'm getting tired of building engineering projects with so much repetitive work, that makes me boring, and many developers just died in such mediocrity. I think pursuing a Ph.D. is a progress that you can keep learning, trying to solve some new problems that nobody knows their answers, and this is a kind of life I want, full of challenges.
 
 Another person I met is Rob Cheng, Chief of Staff and Head Coach at Elementum (a startup in the San Francisco Bay Area). Minh introduced me to Rob, he is a very nice person, aims to build successful startups can improve the world. Last year, Wei-Ping recommended me to Elementum to do an internship, and Rob is the person in charge of this. Unfortunately, Elementum is in a very difficult stage at that time because of the shortage of funds, and getting an intern from overseas costs a lot. You know, companies are all profitable and avoiding, this matter is not a good deal for them, so Rob still refused me, although there is a strong recommendation form Wei-Ping. This matter really hurts me, since it took a really long time to wait for a bad result. But it also let me understood that no matter what kind of person is willing to help you, you still need your core competitiveness. Everybody is a businessman, nobody would say no to you if you are irreplaceable. Even if you are the best undergraduate, your skills are still replaceable. So, why me?
 
+Those two things told me that my current Resume can only tells people that I'm good at programming, or something like mathematics. But I'm not an expert in any areas, I need focus on something that I'm interested in, that will be good for both my academic and business life.
 
+
+### Difficulties
+
+By reading this book, I have a clearer view about how many challenges are there when you are pursuing your Ph.D. degree. The Ph.D. study is not as your thought.
+
+As for Guo, the first year is the downfall. His advisor just asked him to do some repetitive and boring work, after near 1000 hours spent in the project, his paper still has not been accepted.
 
 
 
