@@ -111,4 +111,99 @@ $ echo ${SOMEVAR:?}
 -sh: SOMEVAR: parameter null or not set
 ```
 
+### Control flow
+
+There are some condition expressions, such as file conditions, string conditions and integer conditions.
+
+Here I present some of them.
+
+Integer Conditions
+```
+n0 -eq n1
+n0 is equal to n1
+n0 -ge n1
+n0 is greater than or equal to n1
+n0 -gt n1
+n0 is strictly greater than n1
+n0 -le n1
+n0 is less than or equal to n1
+n0 -lt n1
+n0 is strictly less than n1 
+n0 -ne n1
+n0 is not equal to n1
+```
+
+Nor, and and or,
+
+```
+!B
+Negation; is true if B is false.
+B0 -a B1
+And; is true if B0 and B1 are both true.
+B0 -o B1
+Or; is true if either B0 or B1 is true.
+```
+
+String Conditions,
+
+```
+-n s
+s has non-zero length
+-z s
+s has zero length
+s0 = s1
+s0 and s1 are identical
+s0 != s1
+s0 and s1 are different
+s
+s is not null (often used to check that an environment variable has a value)
+```
+
+With the basic knowledge about the conditions, we can use the if-statement to generate some code,
+
+Input:
+```bash
+rank=captain
+
+if [ "$rank" = colonel ] 
+then 
+  echo Hannibal Smith 
+elif [ "$rank" = captain ] 
+then
+  echo Howling Mad Murdock 
+elif [ "$rank" = lieutenant ] 
+then
+  echo Templeton Peck 
+else
+  echo B.A. Baracus 
+fi
+```
+
+Output:
+```bash
+Mad Murdock
+```
+
+The case -statement is sort of a special form of the if -statement,specialized in the kind of test demonstrated in the last example: taking a value and comparing it to a fixed set of expected values or patterns. The case -statement is an elegant alternative to a potentially messy if -statement in such a case.
+
+Here is an example,
+
+Input:
+```bash
+rank=captain 
+
+case $rank in
+  colonel) echo Hannibal Smith;; 
+  captain) echo Howling Mad Murdock;; 
+  lieutenant) echo Templeton Peck;; 
+  sergeant) echo B.A. Baracus;;
+  *) echo OOPS;;
+esac
+```
+
+Output:
+
+```bash
+Mad Murdock
+```
 
