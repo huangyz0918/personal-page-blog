@@ -5,7 +5,7 @@ categories: study
 author: "Yizheng Huang"
 ---
 
-Recently, I told [Yaw Anokwa](http://anokwa.com/) about my confusion whether to pursue a Ph.D. and asked him for a recommendation letter if needed. He recommended me a book for reference, __The Ph.D. Grind__ wrote by Phillip Guo. This book is a depict of his six-year Ph.D. experience in Stanford CS department. And this post is something I thought after reading it.
+Recently, I told [Yaw Anokwa](http://anokwa.com/) about my confusion whether to pursue a Ph.D. and asked him for a recommendation letter if needed. He recommended me a book for reference, _The Ph.D. Grind_ wrote by Phillip Guo. This book is a depict of his six-year Ph.D. experience in Stanford CS department. And this post is something I thought after reading it.
 
 The book can be found [here](http://pgbovine.net/PhD-memoir-prologue.htm).
 
@@ -34,8 +34,11 @@ In short, I'm getting tried of the repetitive engineering work and want to try s
 
 By reading this book, I have a clearer view about how many challenges are there when you are pursuing your Ph.D. degree. The Ph.D. study is not as simple as your thought.
 
-As for Guo, the first year is the downfall. His advisor just asked him to do some repetitive and boring work, after near 1000 hours spent in the project, his paper still has not been accepted.
+As for Guo, the first year is a downfall. His advisor just asked him to do some repetitive and boring work, after near 1000 hours spent in the project, his paper still has not been accepted. Although I think studying for a Ph.D. degree is a kind of exploring and innovating, but actually we still need time and efforts to accumulate.
 
+Guo got the prestigious NSF and NDSEG graduate research fellowships, so he can choose his advisor and if he is not satisfied with the current research direction, he can change anytime. But as for students come from overseas, we don't have this option, all the study fees come from advisor's project grant. That means most of us need to do some work that may not as we expected, so the advisor and the research direction should be well considered before applying for the Ph.D. program. 
+
+This is why I want to take a gap year as well, since we didn't get in touch with many research projects, I think a one or two years research experience will be really helpful for applying Ph.D. programs and as well as figuring out which direction is the best for me.
 
 
 
