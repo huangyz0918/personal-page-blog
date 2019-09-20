@@ -32,7 +32,7 @@ In short, I'm getting tried of the repetitive engineering work and want to try s
 
 ### Difficulties
 
-By reading this book, I have a clearer view about how many challenges are there when you are pursuing your Ph.D. degree. The Ph.D. study is not as your thought.
+By reading this book, I have a clearer view about how many challenges are there when you are pursuing your Ph.D. degree. The Ph.D. study is not as simple as your thought.
 
 As for Guo, the first year is the downfall. His advisor just asked him to do some repetitive and boring work, after near 1000 hours spent in the project, his paper still has not been accepted.
 
