@@ -278,3 +278,41 @@ process < data file
 ```
 - read the contents of the data file and redirect that contents to process as input.
 
+__Redirecting standard error (and other streams)__
+
+So far we have looked at redirecting the "normal" standard streams associated with files, i.e. the files that you use if everything goes correctly and as planned. But what about that other stream? The one meant for errors? How do we go about redirecting that? For example, if we wanted to redirect error data into a log file.
+
+As an example, consider the ls command. If you run the command `ls myfile.txt`, it simply lists the filename `myfile.txt` − if that file exists. If the file `myfile.txt` does NOT exist, `ls` will return an error to the `stderr` stream, which by default in Bourne Shell is also connected to your monitor.
+
+Input:
+```bash
+$ ls nosuchfile.txt
+$ ls nosuchfile.txt > logfile.txt
+```
+
+Output:
+```bash
+: no such file or directory
+```
+
+In general you see, the shell cannot know: there could be tons of streams connected to any file. And in order to distinguish one from the other each stream connected to a file has a number associated with it: __by convention 0 is the standard in, 1 is the standard out, 2 is standard error and any other streams have numbers counting on from there__.
+
+Here is an example,
+
+```bash
+$ ls nosuchfile.txt 2> logfile.txt
+```
+No output to the screen, but if we examine `logfile.txt`:
+
+```bash
+$ cat logfile.txt
+: no such file or directory
+```
+
+If we want to redirect stdout and stderr to the same file, we can use the file descriptor as well:
+
+```bash
+$ ls nosuchfile.txt > alloutput.txt 2>&1
+```
+
+Here `2>&1` means something like "redirect stderr to the same file stdout has been redirected to".
