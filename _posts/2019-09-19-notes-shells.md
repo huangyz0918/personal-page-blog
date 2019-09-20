@@ -316,3 +316,21 @@ $ ls nosuchfile.txt > alloutput.txt 2>&1
 ```
 
 Here `2>&1` means something like "redirect stderr to the same file stdout has been redirected to".
+
+__Special Files__
+
+We said earlier that the redirect operators discussed so far all redirect to data files. While this is technically true, Unix magic still means that there's more to it than just that. You see, the Unix file system tends to contain a number of special files called "devices", by convention collected in the `/dev` directory. These device files include the files that represent your hard drive, DVD player, USB stick and so on. They also include some special files, like `/dev/null` (also known as the bit bucket; anything you write to this file is discarded).
+
+As an example of how you might actually use a device file, in the `Solaris` flavour of Unix the loudspeaker and its microphone can be accessed by the file `/dev/audio`. So:
+
+```bash
+$ cat /tmp/audio.au > /dev/audio
+```
+
+Will play a sound, whereas:
+
+```bash
+$ cat < /dev/audio > /tmp/mysound.au
+```
+
+Will record a sound.(you will need to CTRL-C this to finish...)
