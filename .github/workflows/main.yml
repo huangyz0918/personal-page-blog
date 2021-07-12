@@ -1,0 +1,38 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Daily Paper Reading
+on:
+  schedule:
+    - cron: '30 17 * * *'
+jobs:
+  create_issue:
+    name: create paper reading task
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Today's date
+        run: echo "TODAY=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
+      - name: Issue Bot Action
+        uses: imjohnbo/issue-bot@v3.3.0
+        with:
+          assignees: "huangyz0918"
+          labels: "reading"
+          title: "Paper Reading Summary - ${{ env.TODAY }}"
+          body: |
+            ### Paper Reading 
+            This is created on ${{ env.TODAY }}. 
+            
+            **Title**: 
+            
+            **Author**: 
+            
+            **Paper Link**: 
+                
+          pinned: false
+          close-previous: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
