@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[EMNLP 2020] Active Learning for BERT: An Empirical Study'
+title: 'Paper Reading - 13 July'
 categories: paper
 author: 'Yizheng Huang'
 meta: 'Springfield'
