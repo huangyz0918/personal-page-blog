@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Paper Reading - 15 July'
+title: 'Paper Reading - 16 July'
 categories: paper
 author: 'Yizheng Huang'
 meta: 'Springfield'
@@ -32,7 +32,7 @@ LLL Workflow:
 
 ![](https://i.loli.net/2021/07/16/OBG1IPhgv268cHu.png)
 
-- 端到端语音识别模型一开始在 $$ D_1 $$ 数据集上训练，训练完成得到模型参数 $$ \theta^{1^{\*}}。
+- 端到端语音识别模型一开始在 $$ D_1 $$ 数据集上训练，训练完成得到模型参数 $$ \theta^{1^{*}} $$。
 - 之后继续在数据集 $$ D_k $$ 上训练到 $$ k^{th} $$ 次，每一次会保留上一次训练的部分学习样本 $$ D^{+}_{k-1} $$ 进行复习用。
 - 训练的目标是模型在之前所有 learning domain ($$ 1 ~ k $$) 上的语音识别准确率。
 
