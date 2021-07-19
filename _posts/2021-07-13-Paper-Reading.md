@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Paper Reading - 13 July'
+title: 'Paper Reading - Active Learning for BERT'
 categories: paper
 author: 'Yizheng Huang'
 meta: 'Springfield'
