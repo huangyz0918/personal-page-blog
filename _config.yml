@@ -2,7 +2,7 @@ title: Yizheng's Blog
 author: Yizheng Huang
 email: huangyz0918@gmail.com
 description: Hard work always pays off.
-url: "http://blog.huangyz.name/" 
+url: "https://blog.huangyz.name/"
 
 # Build settings
 remote_theme: huangyz0918/moving
@@ -11,12 +11,11 @@ plugins:
 
 moving:
   about_you: Hard work always pays off
-  avatar_url: https://i.loli.net/2019/09/07/wiBh3uMWRUaLX5K.png 
+  avatar_url: https://i.loli.net/2019/09/07/wiBh3uMWRUaLX5K.png
   date_format: "%b %d"
   back_to: "Index"
   social_links:
     rss: RSS
-    github:  huangyz0918
+    github: huangyz0918
     facebook: huangyz0918
     linkedin: yizheng-huang
-
