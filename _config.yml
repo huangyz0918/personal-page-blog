@@ -11,7 +11,7 @@ plugins:
 
 moving:
   about_you: Hard work always pays off
-  avatar_url: https://i.loli.net/2019/09/07/wiBh3uMWRUaLX5K.png
+  avatar_url: avatar.jpg
   date_format: "%b %d"
   back_to: "Index"
   social_links:
