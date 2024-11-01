@@ -34,6 +34,9 @@ Common checkpointing mechanisms include:
 - Periodically saving checkpoints based on training time
 - Periodically saving checkpoints based on the number of epochs
 
+
+![Recovery Time](https://s2.loli.net/2024/11/02/fcsxh7MuzBSiXkr.png)
+
 If the training task involves a large amount of data but relatively few model computations (memory-bound models), we can periodically save checkpoints based on the number of training steps. This ensures a relatively high checkpoint frequency during training. Conversely, if the training task involves substantial model computations but relatively little data (compute-bound models), we can save checkpoints based on training time to ensure sufficient checkpoints are available for recovery.
 
 ### Consistency Issues with Checkpoints
