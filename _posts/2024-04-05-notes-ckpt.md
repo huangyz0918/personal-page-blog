@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using Checkpoint Recovery in Large-Scale ML Training"
-categories: study
+categories: tech
 author: "Yizheng Huang"
 ---
 
