@@ -10,12 +10,11 @@ plugins:
   - jekyll-feed
 
 moving:
-  about_you: Hard work always pays off
+  about_you: Full-stack Engineer | AI Infra Researcher | UCLA
   avatar_url: avatar.jpg
   date_format: "%b %d"
   back_to: "Index"
   social_links:
     rss: RSS
     github: huangyz0918
-    Google Scholar: https://scholar.google.com/citations?hl=en&user=-m-3K4YAAAAJ
     linkedin: yizheng-huang
