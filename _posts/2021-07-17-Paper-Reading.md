@@ -61,7 +61,9 @@ PyWren: Uses remote storage to make the system adaptable to data-intensive workl
 
 ### Proposed Content
 
-This work proposes Cirrus, a distributed ML training framework that addresses these challenges by leveraging serverless computing.
+This work proposes Cirrus, a distributed ML training framework that addresses these challenges by leveraging serverless computing. Here are the APIs provided by Cirrus:
+
+![APIs](https://s2.loli.net/2024/11/06/P98xl4WpVcXTkQF.png)
 
 Three key contributions:
 
@@ -70,5 +72,7 @@ Three key contributions:
 - Stateless Architecture: By utilizing a stateless architecture (serverless lambda), Cirrus can effectively handle frequent worker starts and stops without compromising performance.
 
 ### System Design
+
+![System archtecture](https://s2.loli.net/2024/11/06/gcpsiUW46zuvISM.png)
 
 The system consists of the (stateful) client-side (left) and the (stateless) server-side (right). The client-side contains a user-facing frontend API and supports preprocessing, training, and tuning. The client-side backend manages cloud functions and the allocation of tasks to functions. The server-side consists of the Lambda Worker and the high-performance Data Store components. The lambda worker exports the data iterator API to the client backend and contains efficient implementations for several iterative training algorithms. The data store is used for storing gradients, models, and intermediate pre-processing results.
