@@ -5,6 +5,17 @@ categories: tech
 author: "Yizheng Huang"
 ---
 
+### Table of Contents
+
+- [Introduction](#introduction)
+- [Checkpoint Recovery](#checkpoint-recovery)
+- [Checkpoint Mechanism and Frequency](#checkpoint-mechanism-and-frequency)
+- [Consistency Issues with Checkpoints](#consistency-issues-with-checkpoints)
+- [Reducing Checkpoint System Overhead](#reducing-checkpoint-system-overhead)
+- [Reference](#reference)
+
+### Introduction
+
 When training LLMs or larger deep learning models, distributed GPU clusters and massive amounts of training and testing data are often used. The duration of the training process is also usually quite long. In such cases, if issues like network interruptions or machine failures occur during training, they can cause training interruptions, resulting in significant time and financial losses.
 
 Common causes of training interruptions include:

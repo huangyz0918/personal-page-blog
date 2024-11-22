@@ -7,6 +7,17 @@ author: "Yizheng Huang"
 
 This is a brief reading note about the _Bourne Shell Scripting_ from [Wikibooks.org](https://en.wikibooks.org).
 
+### Table of Contents
+
+- [What's SH (Bourne Shell)](#whats-sh-bourne-shell)
+- [Improvements in SH](#improvements-in-sh)
+- [Multiprocessing](#multiprocessing)
+- [Variable Expansion](#variable-expansion)
+- [Control Flow](#control-flow)
+- [Loops](#loops)
+- [File and Streams](#file-and-streams)
+
+
 ### What's SH (Bourne Shell)
 
 Right after the Unix was invented, Stephen Bourne set himself to the task and came up with what he called a shell: a small, on-the-fly compiler that could take one command at a time, translate it into the
